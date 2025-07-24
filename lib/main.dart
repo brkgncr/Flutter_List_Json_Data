@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_listeler_json_veri/card_listtile.dart';
+import 'package:flutter_listeler_json_veri/listview_kullanimi.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(title: const Text('Liste ve Veri Işlemleri')),
-        body: CardListTileKullanimi(),
+        body: ListviewKullanimi(),
       ),
     );
   }

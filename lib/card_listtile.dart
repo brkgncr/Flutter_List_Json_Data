@@ -16,24 +16,36 @@ class _CardListTileKullanimiState extends State<CardListTileKullanimi> {
         shadowColor: Colors.orange,
         elevation: 12,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Column(
           children: [
-            ListTile(
-              leading: CircleAvatar(child: Icon(Icons.add)),
-              trailing: CircleAvatar(child: Icon(Icons.arrow_back)),
-              title: Text("Burak Gençer"),
-              subtitle: Text("Geliştirici"),
-            ),
-            Divider(
-              thickness: 1,
-              indent: 10,
-              endIndent: 10,
-              color: Colors.purple,
-            ),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
+            tekSatir(),
           ],
         ),
       ),
+    );
+  }
+
+  Column tekSatir() {
+    return const Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        ListTile(
+          leading: CircleAvatar(child: Icon(Icons.add)),
+          trailing: CircleAvatar(child: Icon(Icons.arrow_back)),
+          title: Text("Burak Gençer"),
+          subtitle: Text("Geliştirici"),
+        ),
+        Divider(thickness: 1, indent: 10, endIndent: 10, color: Colors.purple),
+      ],
     );
   }
 }
